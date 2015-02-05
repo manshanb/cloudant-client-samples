@@ -23,7 +23,7 @@ public class Query {
 		
 		System.out.println("Successfully created index");
 		
-		List<Person> persons = db.findByIndex("\"selector\" : {\"hobby\" :\"Baseball\"}", Person.class);
+		List<Person> persons = db.findByIndex("{\"hobby\" :\"Baseball\"}", Person.class);
 		for (Person person : persons) {
 			System.out.println(person);
 		}
